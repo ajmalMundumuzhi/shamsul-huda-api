@@ -22,8 +22,8 @@ const PORT = process.env.PORT || 3000;
 
 const allowedOrigins = [
     'http://localhost:5173',
-    'https://shamsulhuda-admin.netlify.app/',
-    'https://shamsulhuda-web.netlify.app/'
+    'https://shamsulhuda-admin.netlify.app',
+    'https://shamsulhuda-web.netlify.app'
 ]
 
 app.use(cors({
