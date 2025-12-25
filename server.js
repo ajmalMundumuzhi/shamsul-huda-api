@@ -22,6 +22,7 @@ const PORT = process.env.PORT || 3000;
 
 const allowedOrigins = [
     'http://localhost:5173',
+    'http://localhost:5174',
     'https://shamsulhuda-admin.netlify.app',
     'https://shamsulhuda-web.netlify.app'
 ]
@@ -36,7 +37,7 @@ app.use(cors({
         }
     },
     credentials: true,
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
 app.use(express.json());
